@@ -1,0 +1,1 @@
+f0(i,numberofelements-1,0) f0(k,numberofelements-2,0) if(words[k].find(words[i]) != string::npos && words[k]!=words[i]) cos(words[i]);
