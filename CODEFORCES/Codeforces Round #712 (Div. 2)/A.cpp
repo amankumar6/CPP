@@ -32,23 +32,28 @@ using namespace std;
 int main()
 {
     fast;
-    T{
+    T
+    {
         s(a);
         ci(a);
         bool temp = false;
-        f(i, a.length()){
-            if(a[i]!='a'){
-                a.insert(a.length()-1,"a");
+        f(i, a.length())
+        {
+            if (a[i] != 'a')
+            {
+                a.insert(a.length() - i, "a");
                 temp = true;
                 break;
             }
         }
 
-        if(temp){
+        if (temp)
+        {
             yes;
             con(a);
         }
-        else no;
+        else
+            no;
     }
     return 0;
 }
