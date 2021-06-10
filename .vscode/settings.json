@@ -3,6 +3,7 @@
         "xstring": "cpp",
         "xiosbase": "cpp",
         "iosfwd": "cpp",
-        "xlocale": "cpp"
+        "xlocale": "cpp",
+        "xutility": "cpp"
     }
 }
