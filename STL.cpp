@@ -1,54 +1,35 @@
 #include <bits/stdc++.h>
-#define ll long long int
-#define i(a, n) int a = n;
-#define l(a, n) ll a = n;
-#define d(a, n) double a = n;
-#define s(a) string a;
-#define c(a)  \
-    ll a;     \
-    cin >> a; \
-    a
-#define cd(a) \
-    double a; \
-    cin >> a;
-#define cs(a) \
-    string a; \
-    cin >> a;
-#define ci(a) cin >> a
-#define co(a) cout << a
-#define cos(a) cout << a << " "
-#define con(a) cout << a << endl
-#define yes cout << "YES" << endl
-#define no cout << "NO" << endl
-#define nl cout << endl
-#define ca(arr, n)             \
-    for (ll i = 0; i < n; i++) \
-    cin >> arr[i]
-#define caa(arr, n)            \
-    c(n);                      \
-    ll arr[n];                 \
-    for (ll i = 0; i < n; i++) \
-        cin >> arr[i];
-#define f0(i, a, n) for (ll i = a; i >= n; i--)
-#define f(i, n) for (ll i = 0; i < n; i++)
-#define f1(i, a, n) for (ll i = a; i < n; i++)
-#define lcm(a, b) (a * b) / __gcd(a, b)
-#define T     \
-    ll t = 1; \
-    cin >> t; \
-    while (t--)
-#define sr(a, n) sort(a, a + n)
-#define rv(a, n) reverse(a, a + n)
-#define fast                          \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
-#define ret(x) return cout << x, 0;
-
+#define ll                      long long int
+#define i(a,n)                  int a=n;
+#define l(a,n)                  ll a=n;
+#define d(a,n)                  double a=n;
+#define s(a)                    string a;
+#define c(a)                    ll a; cin>>a;a
+#define cd(a)                   double a; cin>>a;
+#define cs(a)                   string a; cin>>a;
+#define ci(a)                   cin>>a
+#define co(a)                   cout<<a
+#define cos(a)                  cout<<a<<" "
+#define con(a)                  cout<<a<<endl
+#define yes                     cout<<"YES"<<endl
+#define no                      cout<<"NO"<<endl
+#define nl                      cout<<endl
+#define ca(arr,n)               for(ll i=0;i<n;i++) cin>>arr[i]
+#define caa(arr,n)              c(n); ll arr[n]; for(ll i=0;i<n;i++) cin>>arr[i];
+#define f0(i,a,n)               for(ll i=a;i>=n;i--)
+#define f(i,n)                  for(ll i=0;i<n;i++)
+#define f1(i,a,n)               for(ll i=a;i<n;i++)
+#define lcm(a,b)                (a*b)/__gcd(a,b)
+#define T                       ll t=1; cin>>t; while(t--)
+#define sr(a,n)                 sort(a,a+n)
+#define rv(a,n)                 reverse(a,a+n)
+#define sz(a)                   (sizeof(a)/sizeof(a[0]))
+#define fast                    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define ret(x)                  return cout<<x,0;
+ 
 using namespace std;
 
-int myArray()
-{
+int myArray(){
     array<int, 4> arr = {1, 2, 3, 4};
 
     int size = arr.size();
@@ -62,8 +43,7 @@ int myArray()
     cout << "last el: " << arr.back() << endl;
 }
 
-int myVector()
-{
+int myVector(){
     vector<int> v;
     vector<int> vec(5, 1); // size of the vector will be 5 and all 5 elm will be initialize with 1 default is 0
     vector<int> vec2(vec); // it will copy all elms of vector vec to vec2
@@ -110,8 +90,7 @@ int myVector()
     // note:- it will only clear the size not the capacity, only size will be zero, capacity will remain same
 }
 
-int myDeque()
-{
+int myDeque(){
     deque<int> d;
 
     d.push_back(1);
@@ -142,8 +121,7 @@ int myDeque()
     d.clear();
 }
 
-int myList()
-{
+int myList(){
     // --------------------------- List(doubly linked list) ---------------------------
 
     list<int> l;
@@ -167,8 +145,7 @@ int myList()
     cout << "size of list" << l.size() << endl;
 }
 
-int myStack()
-{
+int myStack(){
     stack<string> s;
 
     s.push("name1");
@@ -184,8 +161,7 @@ int myStack()
     cout << "Empty or not: " << s.empty() << endl;
 }
 
-int myQueue()
-{
+int myQueue(){
     queue<string> que;
 
     que.push("name1");
@@ -203,8 +179,7 @@ int myQueue()
     cout << "Size after pop" << que.size() << endl;
 }
 
-int myPriority_queue()
-{
+int myPriority_queue(){
     priority_queue<int> maxHeap; // it will be max heap
 
     maxHeap.push(22);
@@ -244,8 +219,7 @@ int myPriority_queue()
     }
 }
 
-int mySet()
-{
+int mySet(){
     // it contains all unique elments
     // it is implemented using BST
     // any element can't be modified
@@ -290,8 +264,7 @@ int mySet()
     nl;
 }
 
-int myMap()
-{
+int myMap(){
     map<int, string> m; // sorted )(logn)
 
     m[1] = "name1";
@@ -328,8 +301,7 @@ int myMap()
         cout << (*i).first << " " << (*i).second << endl;
 }
 
-int myBinary_search()
-{
+int myBinary_search(){
     vector<int> valgo(6);
 
     valgo.push_back(2);
@@ -347,15 +319,13 @@ int myBinary_search()
     cout << "upper bound: " << upper_bound(valgo.begin(), valgo.end(), 5) - valgo.begin() << endl;
 }
 
-int myReverse()
-{
+int myReverse(){
     string myString = "name1";
     reverse(myString.begin(), myString.end());
     con(myString);
 }
 
-int myRotate()
-{
+int myRotate(){
     vector<int> valgo;
     valgo.push_back(2);
     valgo.push_back(5);
@@ -375,8 +345,7 @@ int myRotate()
     f(i, valgo.size()) cos(valgo[i]);
 }
 
-int main()
-{
+int main(){
     fast;
 
     // myArray();
