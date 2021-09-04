@@ -19,6 +19,7 @@
         "regex": "cpp",
         "valarray": "cpp",
         "xutility": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "stack": "cpp"
     }
 }
