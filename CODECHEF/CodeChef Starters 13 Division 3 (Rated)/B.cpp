@@ -1,5 +1,3 @@
-/*      Welcome to my Code      */
- 
 #include <bits/stdc++.h>
 #define ll                      long long int
 #define i(a,n)                  int a=n;
@@ -33,24 +31,17 @@ using namespace std;
 int main()
 {
     fast;
+
+    T{
+        c(n);
+        c(p);
+        c(x);
+        c(y);
+        ll arr[n];
+        ca(arr,n);
+        ll sum = 0;
+        f(i,p) (arr[i] == 1) ? sum += y: sum += x;
+        con(sum);
+    }
     return 0;
 }
- 
-/*It's not who I am underneath, but what I do that defines me
- 
-MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
- `MMMMMMMMMMMMMMMMMMMM           M\  /M           MMMMMMMMMMMMMMMMMMMM'
-   `MMMMMMMMMMMMMMMMMMM          MMMMMM          MMMMMMMMMMMMMMMMMMM'
-     MMMMMMMMMMMMMMMMMMM-_______MMMMMMMM_______-MMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                   `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'
-                          `MMMMMMMMMMMMMMMMMM'
-                              `MMMMMMMMMM'
-                                 MMMMMM
-                                  MMMM
-                                   MM
-*/
