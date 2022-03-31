@@ -91,5 +91,11 @@
         "xstddef": "cpp",
         "xtr1common": "cpp"
     },
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "workbench.colorCustomizations": {
+        "titleBar.activeForeground": "#fff",
+        "titleBar.inactiveForeground": "#ffffffcc",
+        "titleBar.activeBackground": "#044F88",
+        "titleBar.inactiveBackground": "#044F88CC"
+    },
 }
