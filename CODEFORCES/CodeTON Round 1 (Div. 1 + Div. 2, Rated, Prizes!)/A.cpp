@@ -1,5 +1,3 @@
-/*      Welcome to my Code      */
-
 #include <bits/stdc++.h>
 #define ll                      long long int
 #define ld                      long long double
@@ -39,24 +37,20 @@ using namespace std;
 int main()
 {
     fast;
+    T{
+        ll n;
+        cin >> n;
+        ll arr[n];
+        int a1, a2;
+        f(i, n) cin >> arr[i];
+        int maxi = *max_element(arr, arr + n);
+        int mini = *min_element(arr, arr + n);
+        f(i, n){
+            if(arr[i] == mini) a1 = i + 1;
+            if(arr[i] == maxi) a2 = i + 1;
+        }
+
+        cout << a1 << " " << a2 << endl;
+    }
     return 0;
 }
- 
-/*It's not who I am underneath, but what I do that defines me
- 
-MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
- `MMMMMMMMMMMMMMMMMMMM           M\  /M           MMMMMMMMMMMMMMMMMMMM'
-   `MMMMMMMMMMMMMMMMMMM          MMMMMM          MMMMMMMMMMMMMMMMMMM'
-     MMMMMMMMMMMMMMMMMMM-_______MMMMMMMM_______-MMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                   `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'
-                          `MMMMMMMMMMMMMMMMMM'
-                              `MMMMMMMMMM'
-                                 MMMMMM
-                                  MMMM
-                                   MM
-*/

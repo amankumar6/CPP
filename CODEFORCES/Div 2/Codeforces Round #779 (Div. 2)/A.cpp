@@ -1,5 +1,3 @@
-/*      Welcome to my Code      */
-
 #include <bits/stdc++.h>
 #define ll                      long long int
 #define ld                      long long double
@@ -39,24 +37,27 @@ using namespace std;
 int main()
 {
     fast;
+
+    T{
+        ll n;
+        cin >> n;
+        string str;
+        cin >> str;
+        ll lastMale = -1, ans = 0, femaleCount = 0;
+        f(i, n){
+            if(lastMale != -1 && str[i] == '1') femaleCount++;
+        
+            if(lastMale != -1 && str[i] == '0'){
+                if(femaleCount < 2)  ans += 2 - femaleCount;
+                lastMale = -1;
+                femaleCount = 0;
+            }
+
+            if(str[i] == '0' && lastMale == -1) lastMale = i;
+        }
+
+        cout << ans;
+        nl;
+    }
     return 0;
 }
- 
-/*It's not who I am underneath, but what I do that defines me
- 
-MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
- `MMMMMMMMMMMMMMMMMMMM           M\  /M           MMMMMMMMMMMMMMMMMMMM'
-   `MMMMMMMMMMMMMMMMMMM          MMMMMM          MMMMMMMMMMMMMMMMMMM'
-     MMMMMMMMMMMMMMMMMMM-_______MMMMMMMM_______-MMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                   `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'
-                          `MMMMMMMMMMMMMMMMMM'
-                              `MMMMMMMMMM'
-                                 MMMMMM
-                                  MMMM
-                                   MM
-*/

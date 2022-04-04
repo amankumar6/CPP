@@ -1,5 +1,3 @@
-/*      Welcome to my Code      */
-
 #include <bits/stdc++.h>
 #define ll                      long long int
 #define ld                      long long double
@@ -32,31 +30,28 @@
 #define T                       ll t=1; cin>>t; while(t--)
 #define sr(a,n)                 sort(a,a+n)
 #define rv(a,n)                 reverse(a,a+n)
+#define mod 998244353
 #define fast                    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
- 
+
 using namespace std;
  
 int main()
 {
     fast;
+
+    ll fac[1001];
+    fac[0]=1;
+    f1(i, 1, 1001) fac[i] = (fac[i-1] * i) % mod;
+
+    T{
+        ll n, ans = 0;
+        cin >> n;
+        if(n % 2 == 1) cout << "0\n";
+        else{
+            n = n / 2;
+            ans = (fac[n] * fac[n]) % mod;
+            cout << ans << "\n";
+        }
+    }
     return 0;
 }
- 
-/*It's not who I am underneath, but what I do that defines me
- 
-MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
- `MMMMMMMMMMMMMMMMMMMM           M\  /M           MMMMMMMMMMMMMMMMMMMM'
-   `MMMMMMMMMMMMMMMMMMM          MMMMMM          MMMMMMMMMMMMMMMMMMM'
-     MMMMMMMMMMMMMMMMMMM-_______MMMMMMMM_______-MMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                   `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'
-                          `MMMMMMMMMMMMMMMMMM'
-                              `MMMMMMMMMM'
-                                 MMMMMM
-                                  MMMM
-                                   MM
-*/
